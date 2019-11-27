@@ -35,7 +35,6 @@ elif choice=="2":
         date_of_birth = input("Enter date_of_birth: ")
         breed_id = input("Enter breed_id: ")
         pupperobject = Pupper(name, sex, weight, height, color, date_of_birth, breed_id)
-        print(pupperobject)
         writeDB(pupperobject, table)
     else: print("Exiting: select either table BREED OR PUPPER")
 elif choice=="3":

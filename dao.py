@@ -26,7 +26,7 @@ def readPupperDB(Id):
     # result = ""
     if Id != "ALL":
         Id=int(Id)
-        cursor.execute(f"SELECT * FROM PUPPER where id={Id}")
+        cursor.execute(f"select * from PUPPER as p inner join BREED as b on p.breed_id=b.id where b.id={Id}")
     else: cursor.execute(f"SELECT * FROM PUPPER")
     return cursor.fetchall()
 
