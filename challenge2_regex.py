@@ -6,7 +6,7 @@ import os
 This module takes an input directory as input and read through all files and perform a regex pattern serahc and tranform data accordingly
 and replaces contents in the files with new modified data.
 """
-filedir=input("Provide desire folder which has a lost files example C:\\Users\\sravn\\Documents\\RAND\\MPP :")
+filedir=input("Provide desire folder which has a list files example C:\\Users\\sravn\\Documents\\RAND\\MPP :")
 
 filelist=os.listdir(filedir)
 for file in  filelist:
